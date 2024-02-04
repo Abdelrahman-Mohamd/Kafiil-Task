@@ -4,7 +4,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 li a {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -72,7 +75,7 @@ nav ul {
 }
 .nav-items li a,
 .nav-items li i {
-  transition: color 0.3s ease-in; /* Add transition for color */
+  transition: color 0.3s ease-in;
 }
 .nav-items li:hover a,
 .nav-items li:hover i {
@@ -86,4 +89,125 @@ nav ul {
   cursor: pointer;
   font-size: 1.9rem;
   color: #4343439f;
+}
+
+.navbar-popup {
+  background-color: white;
+  box-shadow: 2px 1px 13px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 13px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 13px -3px rgba(0, 0, 0, 0.75);
+  border-radius: 2%;
+  width: 20%;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1rem;
+  position: absolute;
+  top: 6rem;
+  right: 8rem;
+  display: none;
+}
+
+.popup-avatar {
+  width: 17%;
+  height: 17%;
+  border-radius: 50%;
+  border: 1.6px solid #1dbf73;
+}
+.avatar-data h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+.avatar-data h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #4343439f;
+  margin: 0;
+}
+.avatar-data {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-popup a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+}
+.navbar-popup hr {
+  border-color: #77777713;
+}
+.popup-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #777777eb;
+  font-weight: 400;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1.2rem;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1dbf73;
+}
+
+input:checked + .slider:before {
+  transform: translateX(12px);
+}
+.dark-mode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10rem;
+}
+.popup-heading-warning {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ff5869;
+}
+.popup-icons {
+  color: #777777eb;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.popup-icon-warning {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ff5869;
 }
