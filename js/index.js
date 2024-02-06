@@ -3,6 +3,7 @@ const avatarPopup = document.querySelector(".navbar-popup");
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const hamburgerNavItems = document.querySelector(".hamburger-nav-bar");
 const xIcon = document.querySelector(".x-icon");
+const heartIcon = document.querySelector(".fa-heart");
 
 function togglePopup() {
   if (
@@ -52,3 +53,13 @@ xIcon.addEventListener("click", () => {
 window.addEventListener("resize", () => {
   hamburgerNavItems.style.display = "none";
 });
+
+function toggleHeartIcon() {
+  heartIcon.classList.toggle("fa-solid");
+  heartIcon.classList.toggle("fa-regular");
+  heartIcon.style.color = heartIcon.classList.contains("fa-solid")
+    ? "#ff5869"
+    : "";
+}
+
+heartIcon.addEventListener("click", toggleHeartIcon);
