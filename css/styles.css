@@ -279,20 +279,35 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* padding: 50rem; */
+  /* gap: 1rem; */
+  /* background-color: yellow; */
+}
+.hero-section {
+  flex: 2;
+  /* background-color: blue; */
+}
+.side-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  /* background-color: red; */
 }
 
-.main-section h3 {
+.hero-section h3 {
   color: #8692a6;
   font-weight: 400;
   font-size: 1.1rem;
   padding-left: 4rem;
 }
-.main-section h1 {
+.hero-section h1 {
   color: black;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding-left: 4rem;
-  width: 85%;
+  /* width: 90%; */
 }
 .rating {
   display: flex;
@@ -300,7 +315,7 @@ input:checked + .slider:before {
   padding-left: 4rem;
   justify-content: space-between;
   align-items: center;
-  width: 84%;
+  width: 92%;
 }
 .rating-stars {
   display: flex;
@@ -333,6 +348,9 @@ input:checked + .slider:before {
   font-size: 1.7rem;
   cursor: pointer;
 }
+.fa-heart {
+  cursor: pointer;
+}
 .carousel {
   /* padding-left: 4.5rem; */
   display: flex;
@@ -340,7 +358,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 .design {
-  width: 81%;
+  width: 90%;
   padding-left: 5.5rem;
   /* padding-right: 0; */
 }
@@ -365,7 +383,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 51.8rem;
+  gap: 53.7rem;
   position: absolute;
   padding-left: 4rem;
   cursor: pointer;
@@ -384,44 +402,49 @@ input:checked + .slider:before {
   box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
-  margin-right: 7rem;
+  margin-right: 3rem;
   margin-top: 5rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 20rem;
+  width: 60%;
 }
 .lorem-card h1 {
   padding-top: 0.5rem;
   font-size: 1rem;
   padding-left: 1.6rem;
+  margin-bottom: 5rem;
 }
 .lorem-card p {
   padding-left: 1.6rem;
-  width: 80%;
+  width: 85%;
+  /* background-color: red; */
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 .info-card {
-  width: 75%;
+  width: 60%;
   background-color: white;
   box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
-  margin-right: 7rem;
-  margin-top: 2.5rem;
+  margin-right: 3rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
 .share-earn-card {
-  width: 75%;
+  width: 60%;
   background-color: white;
   box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
-  margin-right: 7rem;
-  margin-top: 2.5rem;
+  margin-right: 3rem;
   border-radius: 5px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .share-earn-card h1 {
   padding-top: 0.5rem;
@@ -438,6 +461,7 @@ input:checked + .slider:before {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+  /* background-color: red; */
 }
 
 .fa-medal {
@@ -460,7 +484,8 @@ input:checked + .slider:before {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
+  padding: 1rem 0.5rem;
   border-radius: 5px;
 }
 .contact-me-btn {
@@ -469,10 +494,10 @@ input:checked + .slider:before {
   color: #fafafa;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
   margin-bottom: 2.5rem;
   border-radius: 10px;
   cursor: pointer;
@@ -595,10 +620,7 @@ input:checked + .slider:before {
   color: #696f79;
   cursor: pointer;
 }
-.share-earn-card {
-  display: flex;
-  flex-direction: column;
-}
+
 .social-items {
   display: flex;
   flex-direction: row;
@@ -632,6 +654,113 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+.seller-cards {
+  width: 60%;
+  margin-right: 3rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.seller-cards-headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.side-section .main-side-heading {
+  font-size: 1rem;
+  /* background-color: yellow; */
+  width: 60%;
+  margin-top: 0;
+  /* padding: 0; */
+  /* display: flex;
+  flex-direction: row; */
+}
+.side-section .secondary-side-heading {
+  color: #c3c5c8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  /* background-color: green; */
+  padding: 0;
+  margin: 0;
+}
+.seller-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  gap: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+.seller-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 2;
+}
+.seller-card-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 95%;
+  padding-bottom: 1rem;
+}
+.star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 0.2rem;
+}
+.star h5 {
+  margin: 0;
+  color: #86869e;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.star i {
+  font-size: 0.9rem;
+  color: #ffcb31;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  margin-right: 2.7rem;
+  margin-left: 0.6rem;
+}
+.price h5 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.price i {
+  font-size: 0.9rem;
+  color: #1dbf73;
+}
+.heart i {
+  color: #8692a6;
+}
+.seller-card-info .seller-card-heading {
+  font-size: 0.9rem;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  width: 90%;
+}
+.seller-card img {
+  width: calc(100% / 3);
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
 }
 /* Media Query for Mobile View */
 @media (max-width: 768px) {

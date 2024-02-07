@@ -3,7 +3,7 @@ const avatarPopup = document.querySelector(".navbar-popup");
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const hamburgerNavItems = document.querySelector(".hamburger-nav-bar");
 const xIcon = document.querySelector(".x-icon");
-const heartIcon = document.querySelector(".fa-heart");
+const heartIcons = document.querySelectorAll(".fa-heart");
 
 function togglePopup() {
   if (
@@ -11,7 +11,7 @@ function togglePopup() {
     avatarPopup.style.display === ""
   ) {
     avatarPopup.style.display = "block";
-    hamburgerNavItems.style.display = "none"; // Close hamburgerNavItems when opening avatarPopup
+    hamburgerNavItems.style.display = "none";
   } else {
     avatarPopup.style.display = "none";
   }
@@ -54,12 +54,15 @@ window.addEventListener("resize", () => {
   hamburgerNavItems.style.display = "none";
 });
 
-function toggleHeartIcon() {
+function toggleHeartIcon(event) {
+  const heartIcon = event.currentTarget;
   heartIcon.classList.toggle("fa-solid");
   heartIcon.classList.toggle("fa-regular");
   heartIcon.style.color = heartIcon.classList.contains("fa-solid")
-    ? "#ff5869"
+    ? "#ff5353"
     : "";
 }
 
-heartIcon.addEventListener("click", toggleHeartIcon);
+heartIcons.forEach((icon) => {
+  icon.addEventListener("click", toggleHeartIcon);
+});
