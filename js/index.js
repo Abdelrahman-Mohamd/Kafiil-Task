@@ -1,8 +1,8 @@
 const avatar = document.querySelector(".avatar");
-const avatarPopup = document.querySelector(".navbar-popup");
+const avatarPopup = document.querySelector(".user-popup");
 const hamburgerIcon = document.querySelector(".hamburger-icon");
-const hamburgerNavItems = document.querySelector(".hamburger-nav-bar");
-const xIcon = document.querySelector(".x-icon");
+const hamburgerNavBar = document.querySelector(".hamburger-navbar");
+const cancelHamburgerIcon = document.querySelector(".cancel-hamburger-icon");
 const heartIcons = document.querySelectorAll(".fa-heart");
 
 function togglePopup() {
@@ -10,26 +10,26 @@ function togglePopup() {
     avatarPopup.style.display === "none" ||
     avatarPopup.style.display === ""
   ) {
-    avatarPopup.style.display = "block";
-    hamburgerNavItems.style.display = "none";
+    avatarPopup.style.display = "flex";
+    hamburgerNavBar.style.display = "none";
   } else {
     avatarPopup.style.display = "none";
   }
 }
 
-function toggleHamburgerNavItems() {
+function toggleHamburgerNavbar() {
   if (
-    hamburgerNavItems.style.display === "none" ||
-    hamburgerNavItems.style.display === ""
+    hamburgerNavBar.style.display === "none" ||
+    hamburgerNavBar.style.display === ""
   ) {
-    hamburgerNavItems.style.display = "block";
+    hamburgerNavBar.style.display = "block";
     avatarPopup.style.display = "none";
   } else {
-    hamburgerNavItems.style.display = "none";
+    hamburgerNavBar.style.display = "none";
   }
 }
 
-hamburgerNavItems.style.display = "none";
+hamburgerNavBar.style.display = "none";
 
 avatar.addEventListener("click", togglePopup);
 
@@ -38,20 +38,20 @@ window.addEventListener("click", (event) => {
     !avatar.contains(event.target) &&
     !avatarPopup.contains(event.target) &&
     !hamburgerIcon.contains(event.target) &&
-    !hamburgerNavItems.contains(event.target)
+    !hamburgerNavBar.contains(event.target)
   ) {
     avatarPopup.style.display = "none";
-    hamburgerNavItems.style.display = "none";
+    hamburgerNavBar.style.display = "none";
   }
 });
 
-hamburgerIcon.addEventListener("click", toggleHamburgerNavItems);
+hamburgerIcon.addEventListener("click", toggleHamburgerNavbar);
 
-xIcon.addEventListener("click", () => {
-  hamburgerNavItems.style.display = "none";
+cancelHamburgerIcon.addEventListener("click", () => {
+  hamburgerNavBar.style.display = "none";
 });
 window.addEventListener("resize", () => {
-  hamburgerNavItems.style.display = "none";
+  hamburgerNavBar.style.display = "none";
 });
 
 function toggleHeartIcon(event) {

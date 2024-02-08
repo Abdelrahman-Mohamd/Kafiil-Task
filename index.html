@@ -11,36 +11,48 @@
     <!-- Navbar -->
     <nav>
       <!-- Logo -->
-      <img src="assets/KAF_Logo.svg" alt="logo" class="nav-logo" />
+      <div class="navbar-logo-container">
+        <img src="assets/KAF_Logo.svg" alt="logo" class="navbar-logo" />
+      </div>
       <!-- Navbar items -->
-      <ul class="nav-items">
+      <ul class="navbar-items">
         <li>
           <a href="#">Auctions</a>
-          <i class="fa-solid fa-cart-shopping icon"></i>
+          <i class="fa-solid fa-cart-shopping navbar-icon"></i>
         </li>
         <li>
-          <a href="#">Contests</a> <i class="fa-solid fa-trophy icon"></i>
+          <a href="#">Contests</a>
+          <i class="fa-solid fa-trophy navbar-icon"></i>
         </li>
         <li>
-          <a href="#">Project</a> <i class="fa-solid fa-briefcase icon"></i>
+          <a href="#">Project</a>
+          <i class="fa-solid fa-briefcase navbar-icon"></i>
         </li>
         <li>
-          <a href="#">Portfolios</a> <i class="fa-regular fa-image icon"></i>
+          <a href="#">Portfolios</a>
+          <i class="fa-regular fa-image navbar-icon"></i>
         </li>
         <li>
-          <a href="#">Freelancers</a> <i class="fa-solid fa-users icon"></i>
+          <a href="#">Freelancers</a>
+          <i class="fa-solid fa-users navbar-icon"></i>
         </li>
-        <li><a href="#">Forum</a> <i class="fa-solid fa-comments icon"></i></li>
+        <li>
+          <a href="#">Forum</a> <i class="fa-solid fa-comments navbar-icon"></i>
+        </li>
       </ul>
-      <!-- Avatar -->
-      <ul class="avatar-items">
+      <!-- user -->
+      <ul class="user-items">
         <li>
-          <a href="#"
-            ><i class="fa-regular fa-comment-dots notification-icon"></i
+          <a href="#">
+            <div class="notification-number">10</div>
+            <i class="fa-regular fa-comment-dots notification-icon"></i
           ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-regular fa-bell notification-icon"></i></a>
+          <a href="#"
+            ><div class="notification-number">10</div>
+            <i class="fa-regular fa-bell notification-icon"></i
+          ></a>
         </li>
         <img src="./assets/Avatar.jpg" alt="avatar" class="avatar" />
       </ul>
@@ -52,38 +64,38 @@
     <!-- End of Navbar -->
 
     <!-- hamburger navbar -->
-    <div class="hamburger-nav-bar">
-      <div class="x-icon"><i class="fa-solid fa-xmark"></i></div>
-      <ul class="hamburger-nav-items">
+    <nav class="hamburger-navbar">
+      <div class="cancel-hamburger-icon"><i class="fa-solid fa-xmark"></i></div>
+      <ul class="navbar-items">
         <li>
           <a href="#">Auctions</a>
-          <i class="fa-solid fa-cart-shopping icon"></i>
+          <i class="fa-solid fa-cart-shopping navbar-icon"></i>
         </li>
-        <hr />
         <li>
-          <a href="#">Contests</a> <i class="fa-solid fa-trophy icon"></i>
+          <a href="#">Contests</a>
+          <i class="fa-solid fa-trophy navbar-icon"></i>
         </li>
-        <hr />
         <li>
-          <a href="#">Project</a> <i class="fa-solid fa-briefcase icon"></i>
+          <a href="#">Project</a>
+          <i class="fa-solid fa-briefcase navbar-icon"></i>
         </li>
-        <hr />
         <li>
           <a href="#">Portfolios</a>
-          <i class="fa-regular fa-image icon"></i>
+          <i class="fa-regular fa-image navbar-icon"></i>
         </li>
-        <hr />
         <li>
-          <a href="#">Freelancers</a> <i class="fa-solid fa-users icon"></i>
+          <a href="#">Freelancers</a>
+          <i class="fa-solid fa-users navbar-icon"></i>
         </li>
-        <hr />
-        <li><a href="#">Forum</a> <i class="fa-solid fa-comments icon"></i></li>
+        <li>
+          <a href="#">Forum</a> <i class="fa-solid fa-comments navbar-icon"></i>
+        </li>
       </ul>
-    </div>
+    </nav>
     <!-- End of hamburger navbar-->
 
     <!-- Navbar popup -->
-    <div class="navbar-popup">
+    <div class="user-popup">
       <a href="#">
         <img src="./assets/Avatar.jpg" alt="avatar" class="popup-avatar" />
         <div class="avatar-data">
@@ -124,7 +136,7 @@
     </div>
     <!-- End of Navbar popup -->
 
-    <!-- Hero section -->
+    <!-- main section -->
     <main class="main-section">
       <div class="hero-section">
         <h3>Design / Logo Design</h3>
@@ -132,7 +144,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Diam nisi,
           cras neque Lorem ipsum dolor sit amet.
         </h1>
-        <div class="rating">
+        <div class="rating-section">
           <div class="rating-stars">
             <div class="stars-icons">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
@@ -148,7 +160,9 @@
           </div>
         </div>
         <div class="carousel">
-          <img src="./assets/Albarjas.jpg" class="design" alt="Design" />
+          <div class="design-container">
+            <img src="./assets/Albarjas.jpg" class="design" alt="Design" />
+          </div>
           <div class="arrows">
             <div class="circle">
               <i
@@ -291,7 +305,7 @@
         </div>
       </div>
     </main>
-    <!-- End of hero section -->
+    <!-- End of main section -->
 
     <!-- Font awesome icons-->
     <script
