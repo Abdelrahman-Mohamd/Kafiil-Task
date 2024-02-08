@@ -324,12 +324,10 @@ input:checked + .slider:before {
   top: 40%;
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
   gap: 46vw;
   margin-left: 1.4vw;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
 }
 .circle {
   display: flex;
@@ -543,7 +541,7 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 .info-card .info-items > div {
-  margin-bottom: 1vw; /* Adjust the value as needed */
+  margin-bottom: 1vw;
 }
 
 .share-earn-card {
@@ -552,7 +550,6 @@ input:checked + .slider:before {
   box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
-  /* margin-right: 3rem; */
   border-radius: 5px;
   padding-bottom: 1.2vw;
   display: flex;
@@ -649,7 +646,6 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 0.5rem; */
   flex: 2;
 }
 .seller-card-icons {
@@ -658,7 +654,6 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: start;
   margin-top: 0.5vw;
-  /* background-color: red; */
 }
 .star {
   display: flex;
@@ -789,7 +784,6 @@ input:checked + .slider:before {
   color: #8692a673;
 }
 .services-headings i {
-  /* font-weight: 500; */
   font-size: 1.3vw;
   color: #8692a673;
 }
@@ -1046,8 +1040,8 @@ input:checked + .slider:before {
   font-weight: 410;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 1.5vw;
+  margin-bottom: 15vw;
 }
 .user-review {
   display: flex;
@@ -1163,7 +1157,7 @@ textarea {
     box-shadow: 2px 1px 13px -3px rgba(0, 0, 0, 0.75);
     height: 100%;
     width: 70%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
@@ -1634,7 +1628,6 @@ textarea {
     color: #8692a673;
   }
   .services-headings i {
-    /* font-weight: 500; */
     font-size: 2.5vw;
     color: #8692a673;
   }
