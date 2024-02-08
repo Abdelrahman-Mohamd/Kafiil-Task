@@ -923,6 +923,107 @@ input:checked + .slider:before {
 }
 /* end of purchase service section */
 
+/* rating service section */
+.service-rating-section {
+  position: absolute;
+  top: 128vw;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5vw;
+}
+.service-rating-section h1 {
+  font-size: 1.5vw;
+  font-weight: 550;
+}
+.service-rating-section i {
+  font-size: 1.4vw;
+  color: #ffcb31;
+}
+
+.service-rating-card {
+  background-color: white;
+  box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 15px;
+  width: 54vw;
+  padding: 2vw 1.2vw;
+  font-size: 1.1vw;
+  font-weight: 410;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5vw;
+}
+.service-rating-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: 48vw;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rated-skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 2;
+  gap: 0.5vw;
+}
+.rated-skill h1 {
+  font-size: 1vw;
+  font-weight: 450;
+}
+.rated-skill i {
+  font-size: 1vw;
+}
+.rated-skill h2 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+.Progress-bar {
+  height: 0.5vw;
+  width: 5vw;
+  background-color: #e6eaef;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 2;
+}
+.Progress-bar h3 {
+  position: absolute;
+  margin-left: 21vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.stars {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+}
+.stars i {
+  font-size: 1.1vw;
+}
+.stars i:last-child {
+  color: #e6eaef;
+}
+.colored-progress {
+  width: 70%;
+  background-color: #ffcb31;
+  height: 100%;
+  border-radius: 20px;
+}
+/* end of rating service section */
+
 /* Responsive Mobile Section */
 @media (max-width: 768px) {
   .hamburger-icon {
@@ -1509,6 +1610,99 @@ input:checked + .slider:before {
   }
   .purchase-button:hover {
     background-color: #199b5e;
+  }
+
+  .service-rating-section {
+    top: 250vw;
+    left: 5vw;
+    gap: 1.5vw;
+  }
+  .service-rating-section h1 {
+    font-size: 3vw;
+    font-weight: 550;
+    margin-bottom: 1vw;
+  }
+  .service-rating-section i {
+    font-size: 3vw;
+    color: #ffcb31;
+  }
+
+  .service-rating-card {
+    background-color: white;
+    box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 15px;
+    width: 54vw;
+    padding: 2vw 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 410;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vw;
+  }
+  .service-rating-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 48vw;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .rated-skill {
+    flex: 2;
+    gap: 0.5vw;
+  }
+  .rated-skill h1 {
+    font-size: 2vw;
+    font-weight: 450;
+  }
+  .rated-skill i {
+    font-size: 1.7vw;
+  }
+  .rated-skill h2 {
+    font-size: 2vw;
+    font-weight: 500;
+  }
+  .Progress-bar {
+    height: 0.5vw;
+    width: 5vw;
+    background-color: #e6eaef;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 2;
+  }
+  .Progress-bar h3 {
+    position: absolute;
+    margin-left: 21vw;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+  .stars {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+  }
+  .stars i {
+    font-size: 1.1vw;
+  }
+  .stars i:last-child {
+    color: #e6eaef;
+  }
+  .colored-progress {
+    width: 70%;
+    background-color: #ffcb31;
+    height: 100%;
+    border-radius: 20px;
   }
 }
 /* End Of Responsive Mobile Section */
