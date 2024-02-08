@@ -764,8 +764,6 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
-  /* justify-content: column; */
-  /* align-items: start; */
 }
 .service-card-contents {
   display: flex;
@@ -826,6 +824,104 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 /* end of services section */
+
+/* purchase service section */
+.purchase-section {
+  position: absolute;
+  top: 110vw;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.purchase-section h1 {
+  font-size: 1.5vw;
+  font-weight: 550;
+}
+.purchase-card {
+  background-color: white;
+  box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 15px;
+  width: 54vw;
+  padding: 2vw 1.2vw;
+  font-size: 1.1vw;
+  font-weight: 410;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5vw;
+}
+.adding-items-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  width: 54vw;
+  padding: 1.2vw 1.2vw;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 3;
+}
+.minus {
+  background-color: white;
+  width: 1.7vw;
+  height: 1.7vw;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #1dbf73;
+  cursor: pointer;
+}
+.plus {
+  background-color: white;
+  width: 1.7vw;
+  height: 1.7vw;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #1dbf73;
+  cursor: pointer;
+}
+
+.final-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 700;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  width: 54vw;
+  padding: 1.2vw 1.2vw;
+  flex: 1;
+}
+
+.purchase-button {
+  background-color: #1dbf73;
+  border: none;
+  color: #fafafa;
+  font-size: 1.1vw;
+  padding-top: 1.2vw;
+  padding-bottom: 1.2vw;
+  border-radius: 10px;
+  margin-left: 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+  flex: 2;
+}
+.purchase-button:hover {
+  background-color: #199b5e;
+}
+/* end of purchase service section */
 
 /* Responsive Mobile Section */
 @media (max-width: 768px) {
@@ -1348,6 +1444,71 @@ input:checked + .slider:before {
     font-size: 3vw;
     color: #c3c5c8;
     cursor: pointer;
+  }
+
+  .purchase-section {
+    top: 229vw;
+    left: 5vw;
+    gap: 1.5vw;
+  }
+  .purchase-section h1 {
+    font-size: 3vw;
+    font-weight: 550;
+  }
+  .purchase-card {
+    border-radius: 5px;
+    width: 54vw;
+    padding: 1.2vw 1.2vw;
+    font-size: 2.5vw;
+    font-weight: 410;
+    gap: 1.5vw;
+  }
+  .adding-items-card {
+    border-radius: 5px;
+    width: 54vw;
+    padding: 1.2vw 1.2vw;
+    flex: 3;
+  }
+  .minus {
+    background-color: white;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    font-size: 5vw;
+    font-weight: 400;
+  }
+  .plus {
+    background-color: white;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    font-size: 5vw;
+    font-weight: 400;
+  }
+
+  .final-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    width: 54vw;
+    padding: 1.2vw 1.2vw;
+  }
+
+  .purchase-button {
+    background-color: #1dbf73;
+    border: none;
+    color: #fafafa;
+    font-size: 2.2vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    border-radius: 5px;
+    margin-left: 2vw;
+  }
+  .purchase-button:hover {
+    background-color: #199b5e;
   }
 }
 /* End Of Responsive Mobile Section */

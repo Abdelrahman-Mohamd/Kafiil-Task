@@ -4,6 +4,45 @@ const hamburgerIcon = document.querySelector(".hamburger-icon");
 const hamburgerNavBar = document.querySelector(".hamburger-navbar");
 const cancelHamburgerIcon = document.querySelector(".cancel-hamburger-icon");
 const heartIcons = document.querySelectorAll(".fa-heart");
+const minus = document.querySelector(".minus");
+const plus = document.querySelector(".plus");
+const finalPrice = document.querySelector(".final-price");
+const numberOfItems = document.querySelector(".number");
+
+let price = parseFloat(finalPrice.textContent.replace("$", ""));
+let items = parseInt(numberOfItems.textContent);
+
+function decrementPrice() {
+  if (price > 0 && items > 0) {
+    price -= 100;
+    items--;
+    updatePrice();
+    updateNumberOfItems();
+  }
+}
+
+function incrementPrice() {
+  price += 100;
+  items++;
+  updatePrice();
+  updateNumberOfItems();
+}
+
+function updatePrice() {
+  finalPrice.textContent = "$" + price.toFixed(2);
+}
+
+function updateNumberOfItems() {
+  numberOfItems.textContent = items;
+}
+
+minus.addEventListener("click", () => {
+  decrementPrice();
+});
+
+plus.addEventListener("click", () => {
+  incrementPrice();
+});
 
 function togglePopup() {
   if (
