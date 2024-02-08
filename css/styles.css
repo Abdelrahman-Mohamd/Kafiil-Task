@@ -1024,6 +1024,124 @@ input:checked + .slider:before {
 }
 /* end of rating service section */
 
+/* reviews section */
+.reviews-section {
+  position: absolute;
+  top: 144vw;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5vw;
+}
+.reviews-card {
+  background-color: white;
+  box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 15px;
+  width: 54vw;
+  padding: 2vw 1.2vw;
+  font-size: 1.1vw;
+  font-weight: 410;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1.5vw;
+}
+.user-review {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.7vw;
+}
+.user-review img {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+.user-name {
+  font-size: 1vw;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.9vw;
+}
+.user-rating-stars {
+  font-size: 1.1vw;
+  color: #ffcb31;
+}
+.user-rating-stars i:last-child {
+  color: #e6eaef;
+}
+.review-time {
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: #a7a7a7ee;
+}
+.review-text {
+  margin-top: 0.6vw;
+  font-size: 1vw;
+  font-weight: 400;
+  width: 45vw;
+}
+.review-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.post-review-section {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-top: 2vw;
+  gap: 1.2vw;
+}
+.post-review-section img {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+textarea {
+  border: none;
+  background-color: #f6f6f6;
+  width: 45vw;
+  height: 10vw;
+  border-radius: 10px;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  font-size: 1.1vw;
+  font-family: "Inter", sans-serif;
+  color: #8692a6;
+}
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.publish-btn {
+  background-color: #1dbf73;
+  border: none;
+  color: #fafafa;
+  font-size: 1.1vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  margin-right: 33vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+.publish-btn:hover {
+  background-color: #199b5e;
+}
+
+/* end of reviews section */
+
 /* Responsive Mobile Section */
 @media (max-width: 768px) {
   .hamburger-icon {
@@ -1632,7 +1750,7 @@ input:checked + .slider:before {
     box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
     -webkit-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 15px;
+    border-radius: 10px;
     width: 54vw;
     padding: 2vw 1.2vw;
     font-size: 1.1vw;
@@ -1703,6 +1821,99 @@ input:checked + .slider:before {
     background-color: #ffcb31;
     height: 100%;
     border-radius: 20px;
+  }
+
+  .reviews-section {
+    top: 281vw;
+    left: 5vw;
+    display: flex;
+    gap: 1.5vw;
+  }
+  .reviews-card {
+    border-radius: 10px;
+    width: 54vw;
+    padding: 2vw 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 410;
+    gap: 1.5vw;
+  }
+  .user-review {
+    gap: 0.7vw;
+  }
+  .user-review img {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+  }
+  .user-name {
+    font-size: 2.5vw;
+  }
+
+  .review-info {
+    gap: 0.9vw;
+  }
+  .user-rating-stars {
+    font-size: 2vw;
+    color: #ffcb31;
+  }
+  .user-rating-stars i:last-child {
+    color: #e6eaef;
+  }
+  .review-time {
+    font-size: 2vw;
+    font-weight: 400;
+    color: #a7a7a7ee;
+  }
+  .review-text {
+    margin-top: 0.6vw;
+    font-size: 2.7vw;
+    font-weight: 400;
+    width: 40vw;
+    margin-bottom: 3vw;
+    padding-bottom: 2vw;
+    border-bottom: solid 3px #696f7914;
+  }
+  .review-body {
+    gap: 0.5vw;
+  }
+
+  .post-review-section {
+    padding-top: 2vw;
+    gap: 1.2vw;
+  }
+  .post-review-section img {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+  }
+  textarea {
+    width: 40vw;
+    height: 15vw;
+    border-radius: 10px;
+    padding-top: 2vw;
+    padding-left: 1.5vw;
+    font-size: 2.5vw;
+    font-family: "Inter", sans-serif;
+    color: #8692a6;
+  }
+  .comment-section {
+    gap: 1vw;
+  }
+
+  .publish-btn {
+    background-color: #1dbf73;
+    border: none;
+    color: #fafafa;
+    font-size: 2.2vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    margin-right: 20vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+  }
+  .publish-btn:hover {
+    background-color: #199b5e;
   }
 }
 /* End Of Responsive Mobile Section */
